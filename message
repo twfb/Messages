@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for tty in `ps ua | grep -P '^'"$USER"'.*?((sh)|(zsh)|(bash))$' |  awk '{ print $7 }'`
+do
+    echo $1 > /dev/$tty
+done
