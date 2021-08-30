@@ -4,12 +4,14 @@ send message all terminal of current user.
 
 ### Usage
 
-```bash
+```shell
+# shell
 ./message content
 ./message.py content
 ```
 
 ```Python
+# python
 from message imoprt message
 message("content")
 ```
